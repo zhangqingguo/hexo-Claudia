@@ -2,15 +2,24 @@ header.header-widget.is-flex-shrink-0.is-hidden-mobile
     .container.is-fullhd.is-flex.is-justify-content-space-between.is-align-items-center.is-full-height
         section.is-hidden-mobile.is-flex-shrink-0
             h2
-                a(href= url_for("/"))= (theme.user && theme.user.name || config.author) + "'s blog"
+                a(href= url_for("/"))= (theme.user && theme.user.name || config.author) + "'s blog  "
                 iframe(
 				  frameborder="0"
 				  height="20"
 				  hspace="0"
 				  scrolling="no"
 				  src="https://i.tianqi.com/?c=code&a=getcode&id=1&icon=1"
-				  width="450"
+				  width="600"
 				)
+                |
+                iframe(
+				  clocktype="html5"
+                  frameborder="no"
+                  scrolling="no"
+                  style="overflow:hidden;border:0;margin:0;padding:0;width:140px;height:25px;"
+                  src="https://www.clocklink.com/html5embed.php?clock=047&timezone=CCT&color=black&size=140&Title=&Message=&Target=&From=2024,1,1,0,0,0&Color=black"
+				)
+
         h3.is-hidden-mobile.is-family-serif.is-full-height.is-flex.is-align-items-center.is-flex-shrink-0
             block topic
 	    
